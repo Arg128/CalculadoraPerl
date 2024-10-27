@@ -1,19 +1,60 @@
 <!DOCTYPE html>
-<html lang = "es">
-
+<html>
 <head>
-    <link rel="" type="stylesheets">
-    <title> Calculadora sencilla</title>
+    <style type="text/css">
+        body {
+            background-color: rgb(32, 102, 182);
+        }
+        h1 {
+            color: lightgreen;
+            text-align: center;
+            margin: 50px;
+            padding: 20px;
+            border: 5px solid blue;
+            background-color: gray;
+        }
+        p {
+        	position: relative;
+            text-align: left;
+            width: 45%;
+            height: 10%px;
+            margin: 25%;
+            color: white;
+            background-color: black;
+        }
+        div {
+            background-color: gray;
+            position: relative;
+            text-align: center;
+            border: 5px solid blue;
+            width: 75%;
+            height: 90%;
+        }
+        input {
+        	width: 100%;
+            margin: 5px;
+            color: white;
+            background-color: black;
+            text-align: center;
+            display: inline-block;
+        }
+        input:hover {
+        	background-color: gray;
+        }
+        form {
+            border: 5px solid white;
+            margin: 15%;
+            
+        }
+    </style>
+    <title>Calculadora</title>
 </head>
-
 <body>
-
-    <form action="/cgi-bin/process.pl">
+    <h1>Calculadora</h1>
+        <form action="/cgi-bin/process.pl">
         <input type="text" placeholder="Ingrese su formulon aquí" name = "textlabel">
         <input type="submit" value="Calcular" name = "submit">
 
     </form>
-
 </body>
 
-</html>
